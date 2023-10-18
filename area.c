@@ -1,5 +1,5 @@
 /**
- * Author: Chris Bourke
+ * Author: Huzaifa ahmed/Fa22-BSE-079.
  * 
  * This program prompts the user to enter the
  * base and the height of a triangle and computes

@@ -34,22 +34,22 @@ the program does not run!
 4. Complete all the size and range entries below.
 
 * `char`
-  size: 1 byte
+  size: 1 bytes
   range: -128 to 127
 * `short int`
-  size:
-  range:
+  size: 2 bytes
+  range:-32768 to 32767
 * `int`
-  size:
-  range:
+  size: 4 bytes
+  range:-2147483648 to 2147483647
 * `long int`
-  size:
-  range:
+  size:4
+  range:2147483647 to -2147483648
 * `float`
-  size:
+  size:4
   range: 7 digits of accuracy
 * `double`
-  size:
+  size:8
   range: 15 digits of accuracy
 
 
@@ -57,11 +57,21 @@ the program does not run!
 the exchange amounts for the following inputs:
 
   a) $250.25
+  your fee for the exchange is 25.0%
+  you get:
+  88.96 GBP
+  14374.99 JPY
 
   b) $1,000.52
-
+  your fee for the exchange is 100.1%
+  you get:
+  355.68 GBP
+  57472.37 JPY
   c) $968,410.12
-
+  your fee for the exchange is 96841.0%
+  you get:
+  344269.80 GBP
+  55627898.32 JPY
 
 
 6. Suppose that you had used only `int` types
@@ -69,7 +79,10 @@ in your conversion program.  Would you be able
 to use it to convert the US national debt
 (which as of 2020 was \$26,009,754,625,487)?
 Why or why not?
-
+  we will not be able to do it because according to
+  my logic i am using /100 to find the percentage 
+  and because of that we are limited to using float 
+  or double values.
 
 
 

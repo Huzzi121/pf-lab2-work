@@ -6,11 +6,12 @@ int main()
     printf("enter the amount of dollars you want to convert:");
         scanf("%lf",&dollar);
     
-    fee=dollar*(10/100);
-    printf("your fee for the exchange is %lf%%",fee);
+    fee=dollar/100*10;
+    dollar=dollar-fee;
+    printf("your fee for the exchange is %.1lf%%",fee);
 
-    double pound=dollar*0.79;
-    double japanese=dollar*127.65;
+    double pound=(0.5*dollar)*0.79;
+    double japanese=(0.5*dollar)*127.65;
 
-    printf("you get:\n%lf GBP\n%lf JPY",pound,japanese);
+    printf("\nyou get:\n%.2lf GBP\n%.2lf JPY",pound,japanese);
 }

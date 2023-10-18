@@ -77,11 +77,13 @@ Why or why not?
 
 a) Run the `area` program with 3 and 4 as inputs.  
 What value do you get?  Is this result correct?
+i get 0.000000. This is wrong.
 
 
 b) Execute the program again with inputs 3 and 5.
 Does the program give correct results?  Why not?
-
+i again get 0.000000 this is wrong also but when i changed 1/2 by 0.5 the program worked fine.
 
 c) Fix the program by editing the `area.c` source
 code so that the program produces correct results.
+i changed the 1/2 in the program to 0.5 and it instantly worked fine.
